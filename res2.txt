@@ -1,0 +1,80 @@
+__________________________________________
+Linux ubuntu 5.8.0-45-generic #51~20.04.1-Ubuntu SMP Tue Feb 23 13:46:31 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+__________________________________________
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.33.131  netmask 255.255.255.0  broadcast 192.168.33.255
+        inet6 fe80::c4e9:c729:8975:9c48  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:33:10:cd  txqueuelen 1000  (Ethernet)
+        RX packets 482703  bytes 416413942 (416.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 295797  bytes 34533754 (34.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 53067  bytes 5231902 (5.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 53067  bytes 5231902 (5.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+__________________________________________
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         _gateway        0.0.0.0         UG    100    0        0 ens33
+link-local      0.0.0.0         255.255.0.0     U     1000   0        0 ens33
+192.168.33.0    0.0.0.0         255.255.255.0   U     100    0        0 ens33
+__________________________________________
+UFW status Состояние: неактивен
+__________________________________________
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Byte Order:                      Little Endian
+Address sizes:                   45 bits physical, 48 bits virtual
+CPU(s):                          2
+On-line CPU(s) list:             0,1
+Thread(s) per core:              1
+Core(s) per socket:              1
+Socket(s):                       2
+NUMA node(s):                    1
+Vendor ID:                       GenuineIntel
+CPU family:                      6
+Model:                           61
+Model name:                      Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz
+Stepping:                        4
+CPU MHz:                         1995.385
+BogoMIPS:                        3990.77
+Hypervisor vendor:               VMware
+Virtualization type:             full
+L1d cache:                       64 KiB
+L1i cache:                       64 KiB
+L2 cache:                        512 KiB
+L3 cache:                        6 MiB
+NUMA node0 CPU(s):               0,1
+Vulnerability Itlb multihit:     KVM: Mitigation: VMX unsupported
+Vulnerability L1tf:              Mitigation; PTE Inversion
+Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT Host state unknown
+Vulnerability Meltdown:          Mitigation; PTI
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Full generic retpoline, IBPB conditional, IBRS_FW, STIBP disabled, RSB filling
+Vulnerability Srbds:             Unknown: Dependent on hypervisor status
+Vulnerability Tsx async abort:   Not affected
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon nopl xtopology tsc_reliable nonstop_tsc cpuid pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 invpcid rdseed adx smap xsaveopt arat md_clear flush_l1d arch_capabilities
+__________________________________________
+Filesystem     1M-blocks  Used Available Use% Mounted on
+udev               1547M    0M     1547M   0% /dev
+tmpfs               316M    2M      314M   1% /run
+/dev/sda5         34515M 8795M    23938M  27% /
+tmpfs              1576M    0M     1576M   0% /dev/shm
+tmpfs                 5M    1M        5M   1% /run/lock
+tmpfs              1576M    0M     1576M   0% /sys/fs/cgroup
+/dev/loop0           56M   56M        0M 100% /snap/core18/1988
+/dev/loop1          219M  219M        0M 100% /snap/gnome-3-34-1804/66
+/dev/loop2           52M   52M        0M 100% /snap/snap-store/518
+/dev/loop3           65M   65M        0M 100% /snap/gtk-common-themes/1514
+/dev/loop4           33M   33M        0M 100% /snap/snapd/11107
+/dev/sda1           511M    1M      511M   1% /boot/efi
+tmpfs               316M    1M      316M   1% /run/user/1000
+/dev/loop6           33M   33M        0M 100% /snap/snapd/11402

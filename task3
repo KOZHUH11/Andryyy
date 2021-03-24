@@ -1,0 +1,22 @@
+#!/bin/bash
+echo 'Task3'
+
+date >> res3
+
+echo '__________________________________'>> res3
+echo "Uptime" >> res3
+uptime>> res3
+echo '__________________________________'>> res3
+echo "Current users">> res3
+w>> res3
+echo '__________________________________'>> res3
+echo "Recent logins">> res3
+last -a | head -5>> res3
+echo '__________________________________'>> res3
+echo "TOP-10 processes by RAM/CPU usage">> res3
+ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head >> res3
+echo '__________________________________'>> res3
+echo "Open TCP/UDP ports: $(sudo netstat -tulpn)">> res3
+echo '__________________________________'>> res3
+echo "Usage of disk space and Virtual Memory usage: $(free)">> res3
+

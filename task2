@@ -1,0 +1,19 @@
+#!/bin/bash
+echo "task2"
+echo '__________________________________________'> res2.txt
+uname -a >>res2.txt
+echo '__________________________________________'>>res2.txt
+ifconfig >> res2.txt
+echo '__________________________________________'>>res2.txt
+
+route >> res2.txt
+echo '__________________________________________'>>res2.txt
+
+echo "UFW status $(sudo ufw status)">>res2.txt
+echo '__________________________________________'>>res2.txt
+lscpu>>res2.txt
+
+echo '__________________________________________' >>res2.txt
+df -BM>>res2.txt
+cat res2.txt
+
